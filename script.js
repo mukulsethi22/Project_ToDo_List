@@ -9,6 +9,10 @@ btnAdd.click(()=>{
         'class':'list-group-item',
         text:inpNewTask.val()
     })
+    listItem.click(()=>{
+        // $(event.target)
+        listItem.toggleClass('done')
+    })
     ulTasks.append(listItem)
     inpNewTask.val('')
 })
